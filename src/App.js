@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-const BACKEND = "http://localhost:4001"; // CHANGE THIS TO YOUR Render backend URL after deploy
+const BACKEND = "https://backend-pgew.onrender.com/"; // CHANGE THIS TO YOUR Render backend URL after deploy
 function api(path) { return fetch(`${BACKEND}/api/game/${path}`).then(r => r.json()); }
 function apiProfile() { return fetch(`${BACKEND}/api/profile`).then(r => r.json()); }
 const MODES = [ "battles", "cases", "upgrader", "roulette", "bomb" ];
